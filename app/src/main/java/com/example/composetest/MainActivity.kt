@@ -11,6 +11,8 @@ import androidx.compose.ui.platform.setContent
 import androidx.ui.tooling.preview.Preview
 import com.example.composetest.ui.AppBar
 import com.example.composetest.ui.ComposeTestTheme
+import com.example.composetest.ui.PageContent
+import com.example.composetest.ui.ProfileHead
 
 class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +32,8 @@ class MainActivity : AppCompatActivity() {
 fun MainContent() {
   Column {
     AppBar()
+    ProfileHead()
+    PageContent()
   }
 }
 
